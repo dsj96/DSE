@@ -2,7 +2,6 @@
 Spatio-Temporal Representation Learning with Social Tie forPersonalized POI Recommendation
 
 
-# PPR-master
 The implementation of the PPR model(Personalized POI Recommendation).
 
 Paper ```Spatio-Temporal Representation Learning with Social Tie forPersonalized POI Recommendation``` for DSE 2021.
