@@ -12,7 +12,6 @@ Paper ```Spatio-Temporal Representation Learning with Social Tie forPersonalized
 ## Installation
 Clone this repo.
 ```
-cd PPR-master
 chmod u+x train_PPR.sh
 ```
 ## Function
