@@ -27,7 +27,7 @@ In our experiments, the Foursquare datasets are from https://sites.google.com/si
 ## Data Split
 
 In order to make our model satisfactory to the scenario of recommending
-for future check-ins, we first sort the check-in records of each user in chronological order. Afterwards, we filter the POIs visited by less than five users and the users with less than ten check-in records. Specifically, for a check-in record $c=<u,v,t>$, if the user $u$'s check-in records are less than 5 or the POI $v$ is checked less than 10 times, this record will be filtered.
+for future check-ins, we first sort the check-in records of each user in chronological order. Afterwards, we filter the POIs visited by less than five users and the users with less than ten check-in records. Specifically, for a check-in record $$c=<u,v,t>$$, if the user $u$'s check-in records are less than 5 or the POI $v$ is checked less than 10 times, this record will be filtered.
 Finally we choose the first 80\% of each user’s check-ins in chronological order as train data, the remaining 20\% as test data. The former is stored in $train\_checkin\_file.txt$ and the later is stored in $test\_checkin\_file.txt$ provided by us.
 
 ## Data Format
