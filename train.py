@@ -46,7 +46,7 @@ def parse_args():
     parser.add_argument('--test_sample_num', type=int, default=100,
                         help='Set the number of test records')
 
-    parser.add_argument('--sample_test', type=bool, default=False,
+    parser.add_argument('--sample_test', type=bool, default=True,
                     help='Use all the test samples for evaluation, default is true')
     return parser.parse_args()
 
