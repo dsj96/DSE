@@ -4,7 +4,7 @@ Spatio-Temporal Representation Learning with Social Tie forPersonalized POI Reco
 
 The implementation of the PPR model(Personalized POI Recommendation).
 
-Paper ```Spatio-Temporal Representation Learning with Social Tie forPersonalized POI Recommendation``` for DSE 2021.
+Paper ```Spatio-Temporal Representation Learning with Social Tie forPersonalized POI Recommendation``` for DSE 2021
 
 # Usage:
 ## Install dependencies 
@@ -12,6 +12,7 @@ Paper ```Spatio-Temporal Representation Learning with Social Tie forPersonalized
 ## Installation
 Clone this repo.
 ```
+git clone https://anonymous.4open.science/r/DSE-1BEC
 chmod u+x train_PPR.sh
 ```
 ## Function
