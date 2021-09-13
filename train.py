@@ -46,8 +46,6 @@ def parse_args():
     parser.add_argument('--test_sample_num', type=int, default=100,
                         help='Set the number of test records')
 
-    parser.add_argument('--sample_test', type=bool, default=True,
-                    help='Use all the test samples for evaluation, default is true')
     return parser.parse_args()
 
 def log(fname, s):
@@ -135,8 +133,7 @@ def gen_test_data(final_model_tensor):
     test_user_records = generate_user_records(PATH+'test_checkin_file.txt')
     LSTM_test_records = gen_LSTM_test_records(train_user_records, test_user_records, PATH+'test_checkin_file.txt',delt_t=DELT_T)
     random.seed(SEED)
-    if SAMPLE_TEST:
-        LSTM_test_records = random.sample(LSTM_test_records, TEST_SAMPLE_NUM)
+    LSTM_test_records = random.sample(LSTM_test_records, TEST_SAMPLE_NUM)
     LSTM_test_records_input = []
     LSTM_test_records_output = []
     LSTM_test_user_list = []
@@ -194,7 +191,6 @@ if __name__ == "__main__":
     LR = args.lr
     EPOCHS = args.epochs
     SEED = args.seed
-    SAMPLE_TEST = args.sample_test
     random.seed(SEED)
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     torch.manual_seed(SEED)
