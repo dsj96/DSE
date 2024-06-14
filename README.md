@@ -46,4 +46,7 @@ Or you can run the specific program file separately, but the parameters should b
 eg: 
 python3 gen_graph.py --input_path dataset/toyset/ --epsilon 0.5 --theta 24.0
 python3 train.py --input_path dataset/toyset/ --input_size 16 --hidden_size 16 --layers 2 --lr 0.001 --delt_t 6.0 --epochs 20 --dr 0.2 --seed 1 --test_sample_num 300
+
+# FOR DSE
+python3 main_gcn_ppr.py
 ```
